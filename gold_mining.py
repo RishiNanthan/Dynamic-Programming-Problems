@@ -17,7 +17,10 @@
             {(1,0)->(2,1)->(2,2)}
 
     SOLUTION
-    
+        For a every column, take the maximum of left, left-up, left-down elements and add it with the column value to get
+        the max value for the column. 
+
+        DP[i][j] = AR[i][j] + MAX( DP[i][j-1], DP[i-1][j-1], DP[i+1][j-1] ) 
 
 """
 
